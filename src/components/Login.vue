@@ -1,6 +1,6 @@
 <template>
   <div class="login_container">
-    
+
     <!-- 登录主盒子 -->
     <div class="login_box">
 
@@ -8,7 +8,7 @@
       <div class="avatar_box">
         <img src="~assets/img/logo.png" alt="">
       </div>
-      
+
       <!-- 表单域 -->
       <el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules" label-width="0px" class="login_form">
 
@@ -17,9 +17,9 @@
           <!-- 使用el的icon库 -->
           <!-- <el-input  prefix-icon="el-icon-user-solid"></el-input> -->
           <!-- 使用阿里icon -->
-          <el-input  v-model="loginForm.username" prefix-icon="iconfont icon-username"></el-input>
+          <el-input v-model="loginForm.username" prefix-icon="iconfont icon-username"></el-input>
         </el-form-item>
-        
+
         <!-- 密码 -->
         <el-form-item prop="password">
           <el-input v-model="loginForm.password" type="password" prefix-icon="iconfont icon-lock"></el-input>
@@ -32,7 +32,7 @@
         </el-form-item>
 
       </el-form>
-  
+
     </div>
   </div>
 </template>
